@@ -1,0 +1,4 @@
+.HeroSection {
+  background-color: red;
+  height: var(--currentHeight, 100vh);
+}
