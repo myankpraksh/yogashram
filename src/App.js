@@ -2,6 +2,7 @@ import "./App.css";
 import HeroSection from "./components/HeroSection/HeroSection";
 import React, { Component } from "react";
 import "./App.css";
+import CreditFooter from "./components/CreditFooter/CreditFooter";
 export class App extends Component {
   constructor() {
     super();
@@ -36,6 +37,8 @@ export class App extends Component {
       <div className="App">
         <HeroSection />{" "}
         {/* component contains hero section with a CTA button */}
+        <CreditFooter />
+        {/* component contains credit to designer and developer */}
       </div>
     );
   }
