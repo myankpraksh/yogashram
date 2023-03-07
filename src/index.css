@@ -2,7 +2,10 @@
   font-family: "PT Mono";
   src: url(./assets/fonts/PTMono-Regular.ttf);
 }
-
+@font-face {
+  font-family: "Chaviera Pro";
+  src: url(./assets/fonts/ChavieraproRegular-rg9jB.otf);
+}
 :root {
   --currentHeight: 100vh; /* variable to store current height of window */
   --currentWidth: 100vw; /* variable to store current width of window */
