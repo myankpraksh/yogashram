@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection/HeroSection";
 import React, { Component } from "react";
 import "./App.css";
 import CreditFooter from "./components/CreditFooter/CreditFooter";
+import WhyYoga from "./components/WhyYoga/WhyYoga";
 export class App extends Component {
   constructor() {
     super();
@@ -10,7 +11,7 @@ export class App extends Component {
       currentWindowHeight: window.innerHeight,
       currentWindowWidth: window.innerWidth,
     };
-  };
+  }
   //function to update current window height and width in css variable in App class state variables
   updateCurrentHeight = () => {
     document
@@ -35,10 +36,9 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        <HeroSection />{" "}
-        {/* component contains hero section with a CTA button */}
-        <CreditFooter />
-        {/* component contains credit to designer and developer */}
+        <HeroSection /> {/* component contains hero section with a CTA button */}
+        <WhyYoga /> {/*component contains why yoga section} */}
+        <CreditFooter /> {/* component contains credit to designer and developer */}
       </div>
     );
   }
