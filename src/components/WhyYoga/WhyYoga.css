@@ -1,0 +1,70 @@
+.WhyYoga {
+  background-color: #f5f5f5;
+  position: relative;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+.halfLogo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  min-height: 70%;
+  width: auto;
+}
+.WhyYogaFlex {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.cardImage {
+  padding: 2rem;
+  min-width: 25%;
+  z-index: 1;
+}
+@media (max-width: 444px) {
+  .cardImage {
+    padding: 0;
+  }
+}
+.WhyYoga > p {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-align: center;
+  padding-top: 3rem;
+}
+#WhyYogaTitle {
+  color: #215a41;
+  font-family: "Chaviera Pro";
+  font-size: 3.5rem;
+  padding-top: 1.5rem;
+}
+@media (min-width: 1444px) {
+  .WhyYogaFlex {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media (max-width: 1144px) {
+  #WhyYogaTitle {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 554px) {
+  #WhyYogaTitle {
+    font-size: 2.7rem;
+  }
+}
+@media (max-width: 360px) {
+  #WhyYogaTitle {
+    font-size: 2rem;
+  }
+  .WhyYoga > p {
+    font-size: 1.05rem;
+  }
+}
