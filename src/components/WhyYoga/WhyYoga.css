@@ -25,11 +25,7 @@
   min-width: 25%;
   z-index: 1;
 }
-@media (max-width: 444px) {
-  .cardImage {
-    padding: 0;
-  }
-}
+
 .WhyYoga > p {
   font-family: "Playfair Display";
   font-style: normal;
@@ -37,6 +33,8 @@
   font-size: 1.3rem;
   text-align: center;
   padding-top: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 #WhyYogaTitle {
   color: #215a41;
@@ -58,6 +56,11 @@
 @media (max-width: 554px) {
   #WhyYogaTitle {
     font-size: 2.7rem;
+  }
+}
+@media (max-width: 444px) {
+  .cardImage {
+    padding: 0;
   }
 }
 @media (max-width: 360px) {
