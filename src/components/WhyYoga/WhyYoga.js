@@ -11,7 +11,7 @@ export default class WhyYoga extends Component {
         <p>Find your inner strength, peace and freedom with Yoga</p>
         <p id="WhyYogaTitle">Why Yoga?</p>
         <div className="WhyYogaFlex">
-          <img src={halfLogo} alt="decorative logo" class="halfLogo" />
+          <img src={halfLogo} alt="decorative logo" className="halfLogo" />
           <img src={innerPeace} alt="inner peace" className="cardImage" />
           <img src={strength} alt="strength" className="cardImage" />
           <img src={harmony} alt="harmony" className="cardImage" />
