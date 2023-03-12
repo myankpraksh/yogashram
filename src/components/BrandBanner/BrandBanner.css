@@ -1,0 +1,55 @@
+.BrandBanner {
+  background-color: #f5f5f5;
+  padding: 2rem 0.5rem;
+  text-align: center;
+  --brandImgWidth: 2000px;
+  --loopTime: 26s;
+}
+.BrandBanner > p {
+  font-family: "Playfair Display";
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+#transparentBrands {
+  position: relative;
+  opacity: 0;
+}
+.infiniteBanner {
+  position: relative;
+  overflow: hidden;
+}
+.brandLogo {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: var(--brandImgWidth);
+  transform: translateX(calc(-1 * var(--brandImgWidth)));
+  animation: moveRight var(--loopTime) linear infinite;
+}
+.brandLogoFollow {
+  position: absolute;
+  width: var(--brandImgWidth);
+  top: 0px;
+  left: 0px;
+  transform: translateX(calc(-1 * var(--brandImgWidth)));
+  animation: moveRight var(--loopTime) linear infinite calc(var(--loopTime) / 2);
+}
+@keyframes moveRight {
+  100% {
+    transform: translateX(calc(1 * var(--brandImgWidth)));
+  }
+}
+/*
+Both brandLogo (first image), brandLogoFollow (second image), are at first at the same position left of the screen.
+animation on second image id delayed until the first image reaches x(0) after which both keeps moving right till x(image width).
+this delay causes second image to keep following first image, just behind the first image
+then getting reset back to x(-image width) as animation-fill is none.
+*/
+@media (max-width: 554px) {
+  .BrandBanner {
+    --brandImgWidth: 1400px;
+  }
+  .BrandBanner > p {
+    font-size: 1.2rem;
+  }
+}
