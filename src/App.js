@@ -6,6 +6,7 @@ import CreditFooter from "./components/CreditFooter/CreditFooter";
 import WhyYoga from "./components/WhyYoga/WhyYoga";
 import WhyUs from "./components/WhyUS/WhyUs";
 import BrandBanner from "./components/BrandBanner/BrandBanner";
+import YogaTypes from "./components/YogaTypes/YogaTypes";
 export class App extends Component {
 
   render() {
@@ -15,6 +16,7 @@ export class App extends Component {
         <WhyYoga /> {/*component contains why yoga section} */}
         <WhyUs /> {/*Component for third section, WhyUs*/}
         <BrandBanner /> {/*Component to have a infinite banner with brand names*/}
+        <YogaTypes /> {/*Component for Yoga type section*/}
         <CreditFooter /> {/* component contains credit to designer and developer */}
       </div>
     );
